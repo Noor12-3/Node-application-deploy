@@ -30,11 +30,11 @@ import { UserDetailcontext } from "../context/UserDetailContext";
     }
    return (
      
-     <div>
+     <>
         <UserDetailcontext.Provider value={{UserDetail,setUserDetail}}>
         {children}
         </UserDetailcontext.Provider>
-        </div>
+        </>
    )
  }
  

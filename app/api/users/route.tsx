@@ -1,8 +1,9 @@
 import { currentUser } from "@clerk/nextjs/server";
 import { NextRequest , NextResponse } from "next/server";
-import { db } from "@/config/db";
-import { usersTable } from "@/config/schema";
+
 import { eq } from "drizzle-orm";
+import { usersTable } from "../../../config/schema";
+import { db } from "../../../config/db";
 export async function POST(req:NextRequest) {
      const user=await currentUser();
     
